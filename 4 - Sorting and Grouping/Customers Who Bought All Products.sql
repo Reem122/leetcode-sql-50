@@ -1,5 +1,4 @@
-DECLARE @Num_of_Products INT
-SET @Num_of_Products = (SELECT COUNT(product_key) FROM Product)
+DECLARE @Num_of_Products INT = (SELECT COUNT(product_key) FROM Product)
 
 SELECT customer_id
 FROM Product AS P INNER JOIN Customer AS C
